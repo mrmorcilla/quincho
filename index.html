@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alquiler de Quincho – Fiestas y Eventos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background: url('https://tu-imagen.com/quincho.jpg') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 6px #000;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .section {
+      margin-bottom: 3rem;
+    }
+
+    .section h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 0.5rem;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .feature {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    iframe {
+      width: 100%;
+      height: 350px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    input, textarea, button {
+      font-family: inherit;
+      font-size: 1rem;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    button {
+      background-color: #3498db;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #2c3e50;
+      color: white;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Alquiler de Quincho para Fiestas</h1>
+</header>
+
+<main>
+  <section class="section">
+    <h2>¿Qué ofrecemos?</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>Espacio amplio</h3>
+        <p>Ideal para cumpleaños, fiestas y reuniones. Capacidad para 50+ personas.</p>
+      </div>
+      <div class="feature">
+        <h3>Parrilla y cocina equipada</h3>
+        <p>Incluye asador, horno, heladera y utensilios de cocina.</p>
+      </div>
+      <div class="feature">
+        <h3>Pileta y patio</h3>
+        <p>Zona al aire libre con pileta y jardín para disfrutar al sol.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Ubicación</h2>
+    <p>Estamos ubicados en Av. Siempreviva 123, Córdoba, Argentina.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3230.955011736959!2d-64.18877648473289!3d-31.413500501465825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329732cfb3df9f%3A0xd31b8fc94834d6cd!2sAv.%20Siempreviva%20123!5e0!3m2!1ses!2sar!4v1599999999999"></iframe>
+  </section>
+
+  <section class="section">
+    <h2>Reservá tu fecha</h2>
+    <form>
+      <input type="text" name="nombre" placeholder="Tu nombre completo" required>
+      <input type="email" name="email" placeholder="Tu correo electrónico" required>
+      <input type="tel" name="telefono" placeholder="Tu número de teléfono" required>
+      <textarea name="mensaje" placeholder="¿Qué fecha querés reservar? ¿Cuántos invitados?" rows="4" required></textarea>
+      <button type="submit">Enviar consulta</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  © 2025 Quincho Para Fiestas - Todos los derechos reservados.
+</footer>
+
+</body>
+</html>
